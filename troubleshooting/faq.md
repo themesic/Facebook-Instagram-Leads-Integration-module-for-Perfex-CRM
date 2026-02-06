@@ -86,7 +86,13 @@ The module automatically adds it to a **retry queue** and tries again later. You
 
 ### Can I control which leads go to which staff member?
 
-Yes! Set a **Default Assigned Staff** in the module settings. Currently, all leads go to the same staff member. For more complex routing, you can use Perfex CRM's workflow features.
+**Yes!** 🎯 The module supports **per-page lead assignment**:
+
+1. Set a **Default Assigned Staff** in the module settings (this is the global fallback)
+2. In the **Connected Pages** table, each page has its own **"Assign Leads To"** dropdown
+3. Select a different staff member for each page — leads from that page will go directly to them!
+
+**Example:** Leads from your "Restaurant Page" go to Alice, leads from your "Real Estate Page" go to Bob. See [Settings Page → Per-Page Lead Assignment](../module-configuration/settings.md#-per-page-lead-assignment) for details.
 
 ***
 

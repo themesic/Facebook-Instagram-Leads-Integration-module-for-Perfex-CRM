@@ -8,6 +8,7 @@ All notable changes to the Facebook & Instagram Leads Integration module are doc
 
 ### ✨ Added
 
+- 🎯 **Per-Page Lead Assignment** — Assign different staff members to different Pages (leads from Page A go to Alice, leads from Page B go to Bob)
 - 📸 **Instagram Lead Ads Support** — Full support for Instagram Lead Ads (same webhook, automatic)
 - 🧙 **Setup Wizard** — Guided 5-step setup wizard for first-time configuration
 - 📊 **Sync History Dashboard** — View all lead syncs with status, timestamps, and details
@@ -79,3 +80,4 @@ All notable changes to the Facebook & Instagram Leads Integration module are doc
 - 🌍 Multi-language support
 - 🔗 CRM automation triggers on lead import
 - 📋 Lead scoring based on form data
+- 🎛️ Per-page lead source & status overrides (database ready, UI coming soon)

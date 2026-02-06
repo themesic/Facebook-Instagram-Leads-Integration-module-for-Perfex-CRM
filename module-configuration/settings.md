@@ -80,9 +80,11 @@ Configure how new leads are handled in Perfex CRM:
 
 | Setting | What It Does | Recommendation |
 | --- | --- | --- |
-| **Default Assigned Staff** | Who gets assigned to new leads | Pick your sales person |
+| **Default Assigned Staff** | Who gets assigned to new leads (global fallback) | Pick your main sales person |
 | **Default Source** | Lead source tag | Create a "Facebook" or "Meta Leads" source |
 | **Default Status** | Initial status for new leads | Usually "New" or "Not Contacted" |
+
+> 💡 **Note:** The Default Assigned Staff acts as a **global fallback**. You can override this **per page** in the Connected Pages section below. For example, leads from Page A can go to Alice, while leads from Page B go to Bob. See [Per-Page Lead Assignment](#-per-page-lead-assignment) below!
 
 ### Options
 
@@ -104,7 +106,31 @@ At the bottom of the settings page, you'll see your connected Facebook Pages:
 | **Page Name** | Your Facebook Page's name |
 | **Status** | 🟢 Monitoring or ⚪ Not Monitoring |
 | **Leads Received** | Total leads received from this Page |
+| **Assign Leads To** | Staff member dropdown — pick who gets leads from THIS specific page |
 | **Action** | Subscribe/Unsubscribe button |
+
+### 🎯 Per-Page Lead Assignment
+
+This is a **powerful feature** that lets you route leads from different Pages to different staff members! 🏆
+
+**How it works:**
+
+1. Each Page has its own **"Assign Leads To"** dropdown 📋
+2. Select a staff member to assign **all leads from that page** to that person
+3. Leave it as **"— Use Global Default —"** to fall back to the global Default Assigned Staff setting
+4. Changes **save automatically** — no need to click Save! ⚡
+
+**Example scenario:**
+
+| Page | Assigned To | What Happens |
+| --- | --- | --- |
+| 🏪 **My Restaurant** | **Alice** (Sales Rep) | All restaurant leads go to Alice |
+| 🏠 **My Real Estate** | **Bob** (Property Agent) | All real estate leads go to Bob |
+| 🛒 **My E-Shop** | *— Use Global Default —* | Uses whatever is set in "Default Assigned Staff" above |
+
+> 💡 **Priority order:** Per-page assignment **always wins** over the global default. If a page has a specific staff member set, that's who gets the lead — regardless of the global setting.
+
+> 🔧 **Pro tip:** This also works for per-page lead **source** and **status** overrides (coming in a future UI update — the database is already ready for it!).
 
 ### Managing Pages
 
@@ -114,6 +140,7 @@ At the bottom of the settings page, you'll see your connected Facebook Pages:
 | **Subscribe** | Click green "Subscribe" button |
 | **Unsubscribe** | Click red "Stop Monitoring" button |
 | **Refresh** | Click "Connect with Facebook" again |
+| **Assign Staff** | Select from the "Assign Leads To" dropdown |
 
 ***
 
